@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body> 
+  <body>
   <header class="page-header">
     <img class="logo" src="#" width="139" height="70" alt="Логотип Седона">
     <nav class="navigation">
@@ -42,54 +42,77 @@
   </header>
   <main class="main-index">
     <section class="advantages">
-      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      <ul class="reasons-list">
-        <li class="reasons-list">
-          <h3>Настоящий городок</h3>
-          <p>-№1-</p>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img class="photo-hotel" src="#" alt="Описание картинки">
+      <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="main-heading-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <ol class="edge-list"></ol>
+        <li class="edge-item edge-item-long">
+          <div class="edge-wrapper edge-wrapper-blue"></div>
+            <h3 class="edge-title">Настоящий городок</h3>
+            <p class="edge-number">-№1-</p>
+            <p class="edge-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="edge-image">
+            <img class="photo-hotel" src="#" alt="Описание картинки">
+          </div>
         </li>
-        <li class="reasons-housing-list">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <ul class="edge-sublist">
+            <li class="edge-item">
+              <div class="edge-wrapper edge-wrapper-silver">
+                <h4 class="edge-title">Жилье</h4>
+                <p class="edge-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+            </li>
+            <li class="edge-item">
+              <div class="edge-wrapper edge-wrapper-silver">
+                <h4 class="edge-title">Еда</h4>
+                <p class="edge-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="edge-item">
+              <div class="edge-wrapper edge-wrapper-silver">
+                <h4 class="edge-title">Сувениры</h4>
+                <p class="edge-description">Не только китайского, но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </li>
-        <li class="reasons-food-list">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        <li class="edge-item edge-item-long"></li>
+          <div class="edge-wrapper edge-wrapper-blue"></div>
+            <h3 class="edge-title">Там есть мост дьявола</h3>
+            <p class="edge-number">-№2-</p>
+            <p class="edge-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
+          <div class="edge-image">
+            <img class="photo-hotel" src="#" alt="Описание картинки">
+          </div>
         </li>
-        <li class="reasons-souvenirs-list">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и настоящего местного производства!</p>
+        <li class="edge-item">
+          <div class="edge-wrapper edge-wrapper">
+            <h3 class="edge-title">Небольшая площадь</h3>
+            <p class="edge-number">- 3 -</p>
+            <p class="edge-description">Все достопримечательности находятся очень близко</p>
+          </div>
         </li>
-        <li class="reasons-list">
-          <h3>Там есть мост дьявола</h3>
-          <img class="photo-nature" src="#" alt="Описание картинки">
-          <p>-№2-</p>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <li class="edge-item">
+          <div class="edge-wrapper edge-wrapper">
+            <h3 class="edge-title">Красивая дорога</h3>
+            <p class="edge-number">- 4 -</p>
+            <p class="edge-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
-        <li class="reasons-list">
-          <h3>Небольшая площадь</h3>
-          <p>-№3-</p>
-          <p>Все достопримечательности находятся очень близко</p>
+        <li class="edge-item">
+          <div class="edge-wrapper edge-wrapper">
+            <h3 class="edge-title">Мало туристов</h3>
+            <p class="edge-number">- 5 -</p>
+            <p class="edge-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
-        <li class="reasons-list">
-          <h3>Красивая дорога</h3>
-          <p>-№4-</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="reasons-list">
-          <h3>Мало туристов</h3>
-          <p>-№5-</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ul>
+      </ol>
     </section>
     <section class="hotel search">
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="button" href="catalog.html">Помск гостиницы в Седоне</a> 
+      <a class="button" href="catalog.html">Помск гостиницы в Седоне</a>
     </section>
     <section class="subscription">
       <h3>Подпишитесь на рассылку</h3>
