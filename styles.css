@@ -32,9 +32,21 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ШАПКА */
 
 .page-header {
+  height: 70px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -46,15 +58,19 @@ body {
 }
 
 .navigation-logo {
+  display: flex;
   width: 140px;
   margin-left: 70px;
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 450px;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -63,7 +79,14 @@ body {
   margin-left: auto;
 }
 
+.navigation-icon {
+  min-width: 32px;
+  min-height: 26px;
+}
+
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -95,17 +118,22 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0;
 }
 
-.main-container {
+.business-card {
   background-image: url('images/indexTop.jpg');
   background-repeat: no-repeat;
+  height: 485px;
   margin: 0 auto;
+  background-color: #83b3d3;
 }
 
 .greetings {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  margin-bottom: 82px;
 }
 
 .main-title {
@@ -134,9 +162,6 @@ body {
 }
 
 .edge-list {
-  outline: 5px solid #7db54f;
-  outline-offset: -5px;
-
   margin: 0;
   padding: 0;
 }
@@ -384,17 +409,12 @@ body {
 }
 
 .catalog-filter-group {
+  display: flex;
   flex-direction: row-reverse;
   margin: 0;
   padding: 0;
   width: 150px;
   margin-left: 70px;
-}
-
-.hotels-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .pagination-show-more {
@@ -404,8 +424,8 @@ body {
 }
 
 .pagination {
-  margin: 0;
   display: flex;
+  margin: 0;
 }
 
 .pagination-item {
@@ -446,8 +466,13 @@ body {
 }
 
 .sorting-container {
+  width: 1200px;
+  margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
+
+  outline: 5px solid #7db54f;
+  outline-offset: -5px;
 }
 
 .button-light {
@@ -479,8 +504,24 @@ body {
   text-transform: uppercase;
 }
 
+.hotels-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px;
+}
+
 .hotels-card {
+  width: 300px;
+  padding: 20px;
   background-color: #ffffff;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.card:nth-child(4n) {
+  margin-left: 70px;
 }
 
 .hotels-card-title {
