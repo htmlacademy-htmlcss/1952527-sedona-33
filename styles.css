@@ -168,6 +168,13 @@ body {
 
 .edge-item-long {
   display: flex;
+  background: #83b3d3;
+}
+
+.edge-item-short {
+  display: table-cell;
+  width: 1200px;
+  height: 384px;
 }
 
 .turn {
@@ -186,9 +193,8 @@ body {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  width: 400px;
   height: 58px;
-  margin-top: 0;
+  margin: 0;
   padding-top: 98px;
 }
 
@@ -202,10 +208,15 @@ body {
   margin: 30px 75px;
 }
 
+.edge-number {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .edge-photo-description {
   margin: 0;
   font-weight: 400;
-  padding: 0 90px 86px;
+  padding: 0 90px 87px;
   color: #ffffff;
   text-align: center;
 }
@@ -214,15 +225,13 @@ body {
   display: flex;
   width: 1200px;
   height: 384px;
-  margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.edge-item-short {
-  display: table-cell;
-  width: 1200px;
-  height: 384px;
+.edge-item {
+  width: 400px;
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .edge-title {
@@ -231,28 +240,17 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.edge-number {
-  text-align: center;
-  text-transform: uppercase;
+  padding: 0;
+  width: 250px;
+  height: 28px;
 }
 
 .edge-description {
+  display: flex;
   font-weight: 400;
-
   margin: 0;
-}
-
-.edge-item {
-  background: rgba(131, 179, 211, 0.12);
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
-  width: 400px;
-}
-
-.edge-item-long {
-  background: #83b3d3;
+  width: 250px;
+  height: 73px;
 }
 
 .food {
