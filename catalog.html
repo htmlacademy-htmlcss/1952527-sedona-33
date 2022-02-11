@@ -145,7 +145,7 @@
       </div>
       <!-- сортировка -->
       <div class="sorting-container">
-        <span class="found">Найденно гостинец: 38</span>
+        <span class="found">Найденно гостинец:38</span>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвые</option>
@@ -157,9 +157,10 @@
         <a class="button button-light" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button button-light" href="#">
+        <a class="button-reviews button-light" href="#">
           <span class="visually-hidden">Показать отзывы</span>
         </a>
+      </div>
       <!-- список гостинец -->
       <section class="hotels">
         <ul class="hotels-list">
@@ -263,10 +264,12 @@
             </select>
           </li>
         </ul>
+        <!-- ПОДПИСКА -->
         <section class="subscription">
-          <h3>Подпишитесь на рассылку</h3>
-          <p>
-            Только полезная информация и никакого спама, честное бойскаутское!
+          <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+          <p class="subscription-text">
+            Только полезная информация и никакого спама,<br />честное
+            бойскаутское!
           </p>
           <form
             class="appointment-form"
@@ -288,26 +291,30 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <!-- ФУТЕР -->
+    <footer class="main-footer">
       <div class="page-footer-container">
         <section class="footer-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://twitter.com/htmlacademy_ru"
+              >
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a
-                class="social-link"
+                class="footer-social-link"
                 href="https://www.facebook.com/htmlacademy"
               >
                 <span class="visually-hidden"> facebook</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a
-                class="social-link"
+                class="footer-social-link"
                 href="https://www.youtube.com/c/HTMLAcademyRUS"
               >
                 <span class="visually-hidden">YouTube</span>
@@ -315,8 +322,8 @@
             </li>
           </ul>
         </section>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="author" href="https://htmlacademy.ru">
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-author" href="https://htmlacademy.ru">
           <p>.html academy</p>
         </a>
       </div>
