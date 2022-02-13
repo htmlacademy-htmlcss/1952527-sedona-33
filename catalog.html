@@ -234,9 +234,11 @@
             <span class="rating">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">
-          Загрузить ещё
-        </button>
+        <div class="load-more">
+          <button class="button button-load-more" type="button">
+            Загрузить ещё
+          </button>
+        </div>
         <ul class="pagination">
           <li class="pagination-item"></li>
           <li class="pagination-item">
@@ -257,42 +259,38 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-          <li>
-            <p>Гостинец на странице</p>
-            <select class="number-hotels" aria-label="Количество">
-              <option value="popular">1</option>
-              <option value="cheap">2</option>
-              <option value="expensive">3</option>
-              <option value="expensive">4</option>
-            </select>
-          </li>
+          <span class="hotel-page">Гостинец на странице</span>
+          <select class="number-hotels" aria-label="Количество">
+            <option value="popular">1</option>
+            <option value="cheap">2</option>
+            <option value="expensive">3</option>
+            <option value="expensive">4</option>
+          </select>
         </ul>
-        <!-- ПОДПИСКА -->
-        <section class="subscription">
-          <h3 class="subscription-title">Подпишитесь на рассылку</h3>
-          <p class="subscription-text">
-            Только полезная информация и никакого спама,<br />честное
-            бойскаутское!
-          </p>
-          <form
-            class="appointment-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label>
-              <input
-                class="input"
-                type="email"
-                name="required"
-                placeholder="Ваш e-mail"
-              />
-            </label>
-            <button class="button-subscription" type="submit">
-              Подписаться
-            </button>
-          </form>
-        </section>
-      </div>
+      </section>
+      <!-- ПОДПИСКА -->
+      <section class="subscription-catalog">
+        <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+        <p class="subscription-text">
+          Только полезная информация и никакого спама,<br />честное
+          бойскаутское!
+        </p>
+        <form
+          class="appointment-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label>
+            <input
+              class="input"
+              type="email"
+              name="required"
+              placeholder="Ваш e-mail"
+            />
+          </label>
+          <button class="button-subscription" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <!-- ФУТЕР -->
     <footer class="main-footer">
