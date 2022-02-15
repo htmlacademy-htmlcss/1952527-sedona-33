@@ -45,6 +45,7 @@
           </li>
         </ul>
       </nav>
+    </header>
     <!-- ФИЛЬТР -->
     <main class="main-inner main-container">
       <div class="page-container">
@@ -144,22 +145,25 @@
         </form>
       </div>
       <!-- сортировка -->
-      <div class="sorting-container">
-        <span class="found">Найденно гостинец: 38</span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <a class="button button-light" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <a class="button button-light" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button button-light" href="#">
-          <span class="visually-hidden">Показать отзывы</span>
-        </a>
+      <div class="choice-container">
+        <div class="sorting-container">
+          <span class="found">Найденно гостинец:38</span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+          <a class="button-light" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button-light" href="#">
+            <span class="visually-hidden">Показать отзывы</span>
+          </a>
+        </div>
+      </div>
       <!-- список гостинец -->
       <section class="hotels">
         <ul class="hotels-list">
@@ -230,9 +234,11 @@
             <span class="rating">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">
-          Загрузить ещё
-        </button>
+        <div class="load-more">
+          <button class="button button-load-more" type="button">
+            Загрузить ещё
+          </button>
+        </div>
         <ul class="pagination">
           <li class="pagination-item"></li>
           <li class="pagination-item">
@@ -253,61 +259,63 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-          <li>
-            <p>Гостинец на странице</p>
-            <select class="number-hotels" aria-label="Количество">
-              <option value="popular">1</option>
-              <option value="cheap">2</option>
-              <option value="expensive">3</option>
-              <option value="expensive">4</option>
-            </select>
-          </li>
+          <span class="hotel-page">Гостинец на странице</span>
+          <select class="number-hotels" aria-label="Количество">
+            <option value="popular">1</option>
+            <option value="cheap">2</option>
+            <option value="expensive">3</option>
+            <option value="expensive">4</option>
+          </select>
         </ul>
-        <section class="subscription">
-          <h3>Подпишитесь на рассылку</h3>
-          <p>
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <form
-            class="appointment-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <label>
-              <input
-                class="input"
-                type="email"
-                name="required"
-                placeholder="Ваш e-mail"
-              />
-            </label>
-            <button class="button-subscription" type="submit">
-              Подписаться
-            </button>
-          </form>
-        </section>
-      </div>
+      </section>
+      <!-- ПОДПИСКА -->
+      <section class="subscription-catalog">
+        <h3 class="subscription-title">Подпишитесь на рассылку</h3>
+        <p class="subscription-text">
+          Только полезная информация и никакого спама,<br />честное
+          бойскаутское!
+        </p>
+        <form
+          class="appointment-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <label>
+            <input
+              class="input"
+              type="email"
+              name="required"
+              placeholder="Ваш e-mail"
+            />
+          </label>
+          <button class="button-subscription" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
-    <footer class="page-footer">
+    <!-- ФУТЕР -->
+    <footer class="main-footer">
       <div class="page-footer-container">
         <section class="footer-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                class="footer-social-link"
+                href="https://twitter.com/htmlacademy_ru"
+              >
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a
-                class="social-link"
+                class="footer-social-link"
                 href="https://www.facebook.com/htmlacademy"
               >
                 <span class="visually-hidden"> facebook</span>
               </a>
             </li>
-            <li class="social-item">
+            <li class="footer-social-item">
               <a
-                class="social-link"
+                class="footer-social-link"
                 href="https://www.youtube.com/c/HTMLAcademyRUS"
               >
                 <span class="visually-hidden">YouTube</span>
@@ -315,8 +323,8 @@
             </li>
           </ul>
         </section>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="author" href="https://htmlacademy.ru">
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="footer-author" href="https://htmlacademy.ru">
           <p>.html academy</p>
         </a>
       </div>
