@@ -48,14 +48,31 @@
     </header>
     <!-- ФИЛЬТР -->
     <main class="main-inner main-container">
-      <div class="page-container">
+      <div class="filter-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link visully-hidden" href="index.html"
-                >Главная</a
-              >
+              <a class="breadcrumbs-link visully-hidden" href="index.html">
+                <img
+                  class="home"
+                  src="images/icon/home.svg"
+                  width="12"
+                  height="12"
+                  alt="home"
+                />
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link visully-hidden" href="index.html">
+                <img
+                  class="group"
+                  src="images/icon/Group.svg"
+                  width="5"
+                  height="8"
+                  alt="Group"
+                />
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -143,9 +160,7 @@
           <button class="button-apply" type="submit">Применить</button>
           <a class="reset" href="catalog.html">Сбросить</a>
         </form>
-      </div>
-      <!-- сортировка -->
-      <div class="choice-container">
+        <!-- сортировка -->
         <div class="sorting-container">
           <span class="found">Найденно гостинец:38</span>
           <select class="select-control" aria-label="Сортировка">
@@ -177,8 +192,11 @@
                 alt="Amara Resort & Spa"
               />
             </a>
-            <h3 class="hotels-card-title"><a>Amara Resort & Spa</a></h3>
-            <p class="hotels-card-price">Гостиница<span>от 4000 ₽</span></p>
+            <a class="hotels-card-title-link" href="#">
+              <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="hotels-card-price">Гостиница</p>
+            <span class="price">От 4000 ₽</span>
             <a class="hotels-card-button button" href="#">Подробнее</a>
             <a class="favorites-button button" href="#">В избранное</a>
             <span class="rating">Рейтинг: 8,5</span>
@@ -193,8 +211,11 @@
                 alt="Desert Quail Inn"
               />
             </a>
-            <h3 class="hotels-card-title"><a>Desert Quail Inn</a></h3>
-            <p class="hotels-card-price">Гостиница<span>от 3000 ₽</span></p>
+            <a class="hotels-card-title-link" href="#">
+              <h3 class="hotels-card-title">Desert Quail Inn</h3>
+            </a>
+            <p class="hotels-card-price">Гостиница</p>
+            <span class="price">От 3000 ₽</span>
             <a class="hotels-card-button button" href="#">Подробнее</a>
             <a class="favorites-button button" href="#">В избранное</a>
             <span class="rating">Рейтинг: 8,9</span>
@@ -209,8 +230,11 @@
                 alt="Villas at Poco Diablo"
               />
             </a>
-            <h3 class="hotels-card-title"><a>Villas at Poco Diablo</a></h3>
-            <p class="hotels-card-price">Гостиница<span>от 2000 ₽</span></p>
+            <a class="hotels-card-title-link" href="#">
+              <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="hotels-card-price">Гостиница</p>
+            <span class="price">От 2000 ₽</span>
             <a class="hotels-card-button button" href="#">Подробнее</a>
             <a class="hotels-card-button button selected" href="#"
               >В избранном</a
@@ -227,18 +251,21 @@
                 alt="GreenTree Inn"
               />
             </a>
-            <h3 class="hotels-card-title"><a>GreenTree Inn</a></h3>
-            <p class="hotels-card-price">Гостиница<span>от 3000 ₽</span></p>
+            <a class="hotels-card-title-link" href="#">
+              <h3 class="hotels-card-title">GreenTree Inn</h3>
+            </a>
+            <p class="hotels-card-price">Гостиница</p>
+            <span class="price">От 3000 ₽</span>
             <a class="hotels-card-button button" href="#">Подробнее</a>
             <a class="favorites-button button" href="#">В избранное</a>
             <span class="rating">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <div class="load-more">
-          <button class="button button-load-more" type="button">
-            Загрузить ещё
-          </button>
-        </div>
+        <hr class="border" />
+        <button class="button button-load-more" type="button">
+          Загрузить ещё
+        </button>
+        <hr class="border" />
         <ul class="pagination">
           <li class="pagination-item"></li>
           <li class="pagination-item">
