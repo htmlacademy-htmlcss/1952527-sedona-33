@@ -164,6 +164,18 @@ body {
 
 /* ПРОИМУЩЕСТВА */
 
+.housing {
+  padding-top: 89px;
+}
+
+.food {
+  padding-top: 91px;
+}
+
+.souvenirs {
+  padding-top: 85px;
+}
+
 .edge-list {
   margin: 0;
   padding: 0;
@@ -247,20 +259,18 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin: 184px auto 0;
+  margin: 0 auto;
+  padding-top: 23px;
   width: 250px;
   height: 28px;
 }
 
 .edge-description {
   display: flex;
-  font-weight: 400;
-  margin: 0;
   width: 250px;
   height: 73px;
-  text-align: center;
   padding-top: 20px;
-  margin: 0 75px 79px;
+  margin: 0 75px;
 }
 
 .edge-title-short {
@@ -269,7 +279,7 @@ body {
   text-align: center;
 }
 
-.food {
+.food-item {
   background: #ffffff;
 }
 
@@ -304,9 +314,9 @@ body {
   line-height: 26px;
   color: #333333;
   text-align: center;
-  height: 52p;
   width: 720px;
   margin: 0 auto;
+  padding-bottom: 56px;
 }
 
 .button-search {
@@ -321,7 +331,9 @@ body {
   border-radius: 10px;
   width: 575px;
   height: 60px;
-  margin: 56px auto 93px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-bottom: 93px;
 }
 
 /* ПОДПИСКА */
@@ -460,12 +472,15 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
+.filter-container {
+  width: 1057px;
+  margin: 0 auto;
+}
 .inner-header-title {
   margin: 0;
   width: 530px;
   height: 68px;
-  margin-left: 70px;
+
   padding-top: 35px;
   padding-bottom: 5px;
 }
@@ -475,23 +490,39 @@ body {
   margin: 0;
   padding: 0;
   width: 120px;
-  margin-left: 73px;
   list-style-type: none;
+}
+
+.breadcrumbs-link {
+  margin-right: 10px;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  padding: 0;
+  margin-right: 67px;
+  margin-bottom: 80px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .catalog-filter {
   display: flex;
-  width: 1200px;
-  height: 280px;
+  width: 1057px;
+  padding-top: 40px;
 }
 
 .sorting-container {
   display: flex;
-}
-
-.choice-container {
-  width: 1057px;
-  margin: 0 auto;
 }
 
 .sorting-container .button {
@@ -590,38 +621,59 @@ body {
   text-decoration: none;
   width: 160px;
   height: 48px;
-  margin-right: 72px;
 }
+
 .hotels {
   width: 1057px;
   margin: 0 auto;
+
   padding-top: 53px;
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 18px 10px;
   list-style-type: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .hotels-card {
+  display: grid;
+  grid-template-rows: 206px min-content 23px min-content min-content;
+  grid-template-columns: 133px 26px 140px;
+  row-gap: 16px;
   width: 300px;
   padding: 20px;
   background-color: #ffffff;
 }
 
+.hotels-card-link {
+  grid-column: 1/-1;
+}
+
+.hotels-card-title-link {
+  text-decoration: none;
+  grid-column: 1/-1;
+}
+
 .hotels-card-title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+  text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .hotels-card-price {
-  line-height: 23px;
   color: #333333;
+  align-self: center;
+  margin: 0;
+  grid-column: 1/2;
 }
 
 .button {
@@ -630,23 +682,36 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
+  align-self: center;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .hotels-card-button {
+  grid-column: 1/2;
   background-color: #756257;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .favorites-button {
+  grid-column: 3/-1;
   background-color: #83b3d3;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
-
+.price {
+  grid-column: 3/-1;
+}
 .selected {
+  grid-column: 3/-1;
   background-color: #7db54f;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .rating {
+  grid-column: 2/-1;
   border: 0.5px solid #f2f2f2;
   border-radius: 4px;
   font-weight: 400;
@@ -656,13 +721,15 @@ body {
   background-color: #f2f2f2;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
-.load-more {
-  margin-top: 34px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+.border {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .button-load-more {
