@@ -79,13 +79,6 @@ body {
   margin-left: auto;
 }
 
-.navigation-icon {
-  min-width: 32px;
-  min-height: 26px;
-  outline: 5px solid #7db54f;
-  outline-offset: -5px;
-}
-
 .navigation-link {
   display: block;
   padding: 20px 17px;
@@ -95,6 +88,13 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+}
+.navigation-home:hover {
+  color: #756257;
+}
+
+.navigation-home:active {
+  border-bottom: 2px solid #756257;
 }
 
 .navigation-user {
@@ -117,8 +117,12 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756257;
+  border-radius: 4px;
 }
-/* ПРОИМУЩЕСТВА */
+
+.button-nav:focus {
+  border: 3px solid #83b3d3;
+}
 
 .main-container {
   flex-grow: 1;
@@ -151,7 +155,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 720px;
-  margin: 63px auto 31px auto;
+  margin: 63px auto 31px;
 }
 
 .main-heading-text {
@@ -325,6 +329,7 @@ body {
 }
 
 .button-search {
+  background-position: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -335,10 +340,23 @@ body {
   text-transform: uppercase;
   border-radius: 10px;
   width: 575px;
-  height: 60px;
   margin: 0 auto;
   padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 93px;
+}
+
+.button-search:active {
+  background-color: #615048;
+  opacity: 0.3;
+}
+
+.button-search:hover {
+  background-color: #615048;
+}
+
+.button-search:focus {
+  border: 3px solid #83b3d3;
 }
 
 /* ПОДПИСКА */
@@ -364,9 +382,11 @@ body {
   margin: 0 auto;
   padding-top: 93px;
 }
+
 .subscription-catalog .subscription-title {
   padding-top: 73px;
 }
+
 .subscription-text {
   font-weight: 400;
   font-size: 22px;
@@ -380,8 +400,8 @@ body {
 
 .appointment-form {
   display: flex;
-  width: 800px;
-  margin-left: 200px;
+  justify-content: center;
+  margin: 0 auto;
   padding-top: 46px;
   padding-bottom: 94px;
 }
@@ -395,17 +415,44 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   text-transform: uppercase;
+  padding: 0;
   border-radius: 0 10px 10px 0;
   width: 200px;
   height: 60px;
+  border: 0;
+}
+
+.button-subscription:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+}
+
+.button-subscription:hover {
+  background-color: #68a2ca;
+}
+
+.button-subscription:active {
+  opacity: 0.3;
 }
 
 .input {
+  box-sizing: border-box;
   padding: 0;
   width: 600px;
-  height: 60px;
+  min-height: 60px;
   border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
+}
+
+.input:hover {
+  background-color: #e6e6e6;
+}
+
+.input:focus {
+  border: 3px solid #83b3d3;
 }
 
 /*футер*/
@@ -436,8 +483,6 @@ body {
   width: 20px;
   height: 18px;
   margin-right: 29px;
-  outline: 5px solid #7db54f;
-  outline-offset: -5px;
 }
 
 .footer-phone {
@@ -547,24 +592,27 @@ body {
 }
 
 .select-control {
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
   width: 287px;
   margin-right: 81px;
+  border-radius: 4px;
+  border: 2px solid #e6e6e6;
 }
-.button-light {
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
+.card-grid-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
+  padding: 1px;
   margin-right: 8px;
   text-decoration: none;
-
-  outline: 2px solid #e800e8;
-  outline-offset: -2px;
+  border-radius: 4px;
+  border: 2px solid #000000;
 }
 
 .button {
@@ -639,6 +687,14 @@ body {
 
   padding: 0;
   margin: 0;
+}
+
+.hotels-card-image:hover {
+  opacity: 0.6;
+}
+
+.hotels-card-link:focus {
+  border: 3px solid #83b3d3;
 }
 
 .hotels-card {
@@ -724,6 +780,33 @@ body {
   text-transform: uppercase;
   padding-top: 9px;
   padding-bottom: 10px;
+}
+
+.rating-tall {
+  grid-column: 1/2;
+  width: 93px;
+  padding-top: 10px;
+  background-image: url(images/icon/star.svg);
+  background-size: 25px 17px;
+  background-repeat: repeat-x;
+  background-position: left -4px center;
+}
+
+.rating-middle {
+  width: 68px;
+  padding-top: 10px;
+  background-image: url(images/icon/star.svg);
+  background-size: 25px 17px;
+  background-repeat: repeat-x;
+  background-position: left -4px center;
+}
+.rating-short {
+  width: 43px;
+  padding-top: 10px;
+  background-image: url(images/icon/star.svg);
+  background-size: 25px 17px;
+  background-repeat: repeat-x;
+  background-position: left -4px center;
 }
 
 .border {
