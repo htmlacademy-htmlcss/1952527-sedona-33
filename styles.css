@@ -576,15 +576,24 @@ body {
 }
 
 .catalog-filter-group {
+  border: none;
   width: 150px;
   padding: 0;
   margin: 0;
   margin-right: 67px;
-  margin-bottom: 83px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-family: 20px;
+  line-height: 20;
+  color: #ffffff;
 }
 
 .catalog-filter-list {
   list-style-type: none;
+  line-height: 23px;
+  width: 150px;
   padding: 0;
   margin: 0;
   padding-top: 30px;
@@ -596,9 +605,85 @@ body {
 
 .catalog-filter {
   display: flex;
-  width: 1057px;
+  justify-content: space-between;
+  width: 1060px;
 }
 /* СОРТИРОВКА */
+.catalog-filter-price {
+  padding: 0;
+  margin-left: 100px;
+  margin-right: 81px;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  margin-top: 32px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  width: 140px;
+  align-items: center;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.range-input {
+  height: 48px;
+  width: 90px;
+  padding-left: 17px;
+  font: inherit;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.check {
+  opacity: 0.3;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .sorting-container {
   display: flex;
   width: 1057px;
@@ -715,6 +800,12 @@ body {
   color: #ffffff;
 }
 
+.apply-reset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .button-apply {
   width: 160px;
   height: 48px;
@@ -725,13 +816,14 @@ body {
   background-color: #83b3d3;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .reset {
+  line-height: 23px;
   color: #ffffff;
   text-decoration: none;
-  width: 160px;
-  height: 48px;
 }
 
 .hotels {
