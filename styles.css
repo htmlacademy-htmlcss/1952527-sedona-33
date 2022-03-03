@@ -1220,20 +1220,37 @@ body {
 }
 
 .arrival-dates {
-  outline: 4px solid red;
   display: flex;
   flex-direction: column;
   width: 420px;
   margin-bottom: 11px;
 }
 
+.field-age {
+  display: flex;
+  width: 133px;
+  height: 50px;
+  margin-right: 0;
+}
+
 .age {
+  display: flex;
+  align-items: center;
   margin: 0;
+  margin-bottom: 40px;
+  width: 133px;
+}
+.adults-age {
+  display: flex;
   margin-bottom: 40px;
 }
 
-.adults-age {
+.adults {
+  outline: 4px solid red;
   display: flex;
+  align-items: center;
+  margin: 0;
+  width: 288px;
 }
 
 .past {
@@ -1241,13 +1258,20 @@ body {
 }
 
 .specify {
+  outline: 4px solid red;
   display: flex;
+  flex-direction: column;
+  margin-top: 14px;
 }
-.adults {
-  display: inline-flex;
+
+.children {
+  display: flex;
+  align-items: center;
+  margin-left: 61px;
 }
 
 .specify-children {
+  display: flex;
   width: 25px;
   height: 25px;
   border-radius: 50%;
