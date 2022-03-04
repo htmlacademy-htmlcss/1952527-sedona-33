@@ -914,7 +914,6 @@ body {
 .hotels {
   width: 1057px;
   margin: 0 auto;
-
   padding-top: 53px;
 }
 
@@ -923,7 +922,6 @@ body {
   grid-template-columns: repeat(3, 340px);
   gap: 18px 10px;
   list-style-type: none;
-
   padding: 0;
   margin: 0;
 }
@@ -1159,6 +1157,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1205,10 +1207,8 @@ body {
 }
 .auth-form {
   position: relative;
-  outline: 2px solid red;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
 }
 
 .choice-date {
@@ -1216,7 +1216,35 @@ body {
 }
 
 .field {
+  padding-left: 19px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 4px;
   height: 50px;
+  cursor: pointer;
+}
+
+.field:focus {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.field:focus {
+  border: 3px solid #83b3d3;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.form-label {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000000;
 }
 
 .arrival-dates {
@@ -1228,9 +1256,16 @@ body {
 
 .field-age {
   display: flex;
-  width: 133px;
+  position: absolute;
   height: 50px;
-  margin-right: 0;
+  width: 133px;
+  right: 280px;
+}
+
+.icon-date {
+  position: absolute;
+  margin: 20px;
+  right: 17px;
 }
 
 .age {
@@ -1240,25 +1275,65 @@ body {
   margin-bottom: 40px;
   width: 133px;
 }
+
 .adults-age {
+  position: relative;
   display: flex;
-  margin-bottom: 40px;
+  width: 100%;
 }
 
 .adults {
-  outline: 4px solid red;
   display: flex;
   align-items: center;
   margin: 0;
-  width: 288px;
+  width: 50%;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000000;
 }
 
-.past {
-  height: 29px;
+.date-past {
+  color: #ff5757;
+}
+
+.field-age,
+.little {
+  display: flex;
+  width: 133px;
+  font-weight: 700;
+  text-align: center;
+  height: 50px;
+  top: 0;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.plus-adults {
+  position: absolute;
+  left: 403px;
+  bottom: 15px;
+}
+
+.plus-children {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+}
+
+.minus-adults {
+  position: absolute;
+  left: 313px;
+  bottom: 20px;
+}
+
+.minus-children {
+  position: absolute;
+  right: 107px;
+  top: 15px;
 }
 
 .specify {
-  outline: 4px solid red;
   display: flex;
   flex-direction: column;
   margin-top: 14px;
@@ -1267,7 +1342,11 @@ body {
 .children {
   display: flex;
   align-items: center;
+  margin-top: 3px;
   margin-left: 61px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000000;
 }
 
 .specify-children {
@@ -1275,10 +1354,51 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  padding: 3px 9px;
   background-color: #83b3d3;
-  margin-right: 18px;
+  color: #ffffff;
+  margin-right: 25px;
+}
+
+.triangle {
+  position: absolute;
+  top: 48px;
+  right: 170px;
+}
+.phrase {
+  position: absolute;
+  font-size: 16px;
+  line-height: 20px;
+  top: 57px;
+  right: 50px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .button-date {
+  min-height: 50px;
   width: 100%;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #83b3d3;
+  cursor: pointer;
+}
+
+.button-date:hover {
+  background-color: #68a2ca;
+}
+
+.button-date:focus {
+  border: 3px solid #756257;
+}
+
+.button-date:active {
+  background-color: #68a2ca;
 }
