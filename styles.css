@@ -426,14 +426,14 @@ body {
   width: 720px;
   height: 52px;
   margin: 0 auto;
-  padding-top: 29px;
+  padding-top: 46px;
 }
 
 .appointment-form {
   display: flex;
   justify-content: center;
   padding-top: 46px;
-  padding-bottom: 94px;
+  padding-bottom: 141px;
 }
 
 .button-subscription {
@@ -493,13 +493,14 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1200px;
+  align-items: center;
+  width: 1060px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .footer-social {
-  max-width: 150px;
-  padding: 40px 72px;
+  max-width: 170px;
 }
 
 .footer-social-list {
@@ -512,15 +513,32 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 29px;
+  color: #83b3d3;
+}
+
+.footer-social-link:hover {
+  color: #68a2ca;
+}
+
+.footer-social-link:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer-social-link:active {
+  opacity: 0.3;
 }
 
 .footer-phone {
+  display: flex;
   max-width: 720px;
-  margin: auto;
+  height: 70px;
+  margin: 0 auto;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  text-align: center;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -529,24 +547,32 @@ body {
   color: #756257;
 }
 
+.footer-phone:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
+}
+
 .footer-phone:active {
   opacity: 0.3;
 }
 
 .footer-author {
-  max-width: 115px;
-  height: 34px;
-  margin: 42px 72px 44px 53px;
-  margin-left: auto;
-}
-
-.footer-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   text-decoration: none;
+  max-width: 170px;
+  height: 70px;
 }
 
 .footer-author:hover {
-  fill: #756257;
+  color: #756257;
+}
+
+.footer-author:hover:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
 }
 
 .footer-author:active {
@@ -909,6 +935,19 @@ body {
   line-height: 23px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.reset:hover {
+  opacity: 0.6;
+}
+
+.reset:focus {
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.reset:active {
+  opacity: 0.3;
 }
 
 .hotels {
