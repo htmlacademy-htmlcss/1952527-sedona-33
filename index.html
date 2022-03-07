@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- ШАПКА -->
@@ -429,9 +429,7 @@
                   id="check-in"
                   name="appointment-date"
                   placeholder="27 апреля 2020"/>
-                <object class="icon-date">
-                  <img src="images/icon/date.svg">
-                </object>
+                <img class="icon-date" src="images/icon/date.svg" width="15" height="15" alt="иконка">
                 <span class="past">
                 <span class="date-past">Мы не можем отправить вас в прошлое.</span>
               </div>
@@ -447,9 +445,7 @@
                   id="departure"
                   name="appointment-date"
                   placeholder="1 Сентебря 2021"/>
-                <object class="icon-date">
-                  <img src="images/icon/date.svg">
-                </object>
+                <img class="icon-date" src="images/icon/date.svg" width="15" height="15" alt="иконка">
                 <span class="past"
                   >На эти даты есть свободные номера. Пока есть.</span
                 >
@@ -457,19 +453,16 @@
             </p>
             <div class="adults-age">
               <p class="adults">
-                <label class="adults"> Взрослые:</label>
+                <label class="adults">Взрослые:</label>
                 <input
                   class="field-age"
                   type="text"
                   name="departure"
                   placeholder="2"
                 />
-                <object class="plus-adults">
-                  <img src="images/icon/plus.svg">
-                </object>
-                <object class="minus-adults">
-                  <img src="images/icon/minus.svg">
-                </object>
+              <img class="plus-adults" src="images/icon/plus.svg" width="13" height="13" alt="иконка">
+              <img class="minus-adults" src="images/icon/minus.svg" width="13" height="1" alt="иконка">
+              </p>
               </p>
               <p class="children">
                 <label class="children"> Дети:</label>
@@ -486,12 +479,8 @@
                   name="departure"
                   placeholder="1"
                 />
-                <object class="plus-children">
-                  <img src="images/icon/plus.svg">
-                </object>
-                <object class="minus-children">
-                  <img src="images/icon/minus.svg">
-                </object>
+                <img class="plus-children" src="images/icon/plus.svg" width="13" height="13" alt="иконка">
+                <img class="minus-children" src="images/icon/minus.svg" width="13" height="1" alt="иконка">
               </p>
             </div>
             <button class="button-date" type="submit">Найти</button>
