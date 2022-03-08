@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -53,8 +54,10 @@ body {
 }
 
 .navigation {
-  position: absolute;
   display: flex;
+  position: absolute;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -111,11 +114,14 @@ body {
 }
 
 .navigation-item-button {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .button-nav {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   margin-left: 18px;
@@ -145,6 +151,10 @@ body {
 
 .navigation-link-icon:active {
   opacity: 0.3;
+}
+
+.button-nav:hover {
+  background-color: #615048;
 }
 
 .button-nav:focus {
@@ -182,6 +192,8 @@ body {
 }
 
 .main-title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -191,14 +203,12 @@ body {
 }
 
 .main-heading-text {
-  width: 720px;
-  margin: 0 auto 80px;
-}
-
-.main-heading-text {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
+  width: 720px;
+  margin: 0 auto 80px;
   color: #333333;
   text-align: center;
 }
@@ -245,24 +255,24 @@ body {
 }
 
 .edge-photo-title {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  height: 58px;
   margin: 0;
   padding-top: 98px;
 }
 
 .reasons-number {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   width: 250px;
-  height: 21px;
   margin: 30px 75px;
 }
 
@@ -312,6 +322,7 @@ body {
   height: 73px;
   padding-top: 20px;
   margin: 0 75px;
+  text-align: center;
 }
 
 .edge-title-short {
@@ -396,7 +407,6 @@ body {
   display: flex;
   margin: 0;
   flex-direction: column;
-  height: 411px;
   color: #ffffff;
   background-color: #000000;
   background-image: url('images/indexBottom.jpg');
@@ -412,7 +422,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 720px;
-  height: 36px;
   margin: 0 auto;
   padding-top: 93px;
 }
@@ -427,16 +436,16 @@ body {
   line-height: 26px;
   text-align: center;
   width: 720px;
-  height: 52px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 29px;
 }
 
 .appointment-form {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   padding-top: 46px;
-  padding-bottom: 141px;
+  padding-bottom: 94px;
 }
 
 .button-subscription {
@@ -451,7 +460,6 @@ body {
   padding: 0;
   border-radius: 0 10px 10px 0;
   width: 200px;
-  height: 60px;
   border: 0;
 }
 
@@ -470,14 +478,13 @@ body {
 
 .input {
   box-sizing: border-box;
-  padding: 0;
   width: 600px;
   min-height: 60px;
-  border: 0;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
+  border: none;
 }
 
 .input:hover {
@@ -1205,11 +1212,11 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-/*
+
 .modal-container-close {
   display: none;
 }
-*/
+
 .modal {
   position: relative;
   margin: auto;
