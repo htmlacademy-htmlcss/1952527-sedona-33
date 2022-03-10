@@ -43,7 +43,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 /* ШАПКА */
 
 .page-header {
@@ -54,13 +60,14 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
-  position: absolute;
   width: 1200px;
   margin: 0 auto;
 }
 
 .logo {
+  position: absolute;
   width: 140px;
   margin-left: 70px;
   margin-right: 30px;
@@ -73,6 +80,7 @@ body {
   padding: 0;
   width: 450px;
   list-style-type: none;
+  margin-left: 239px;
 }
 
 .navigation-link {
@@ -125,6 +133,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin-left: 18px;
+  margin-right: 70px;
   max-height: 37px;
   padding: 8px 15px;
   text-transform: uppercase;
@@ -181,7 +190,6 @@ body {
   background-repeat: no-repeat;
   height: 485px;
   margin: 0 auto;
-  margin-top: 66px;
 }
 
 .business-card {
@@ -478,7 +486,6 @@ body {
 }
 
 .input {
-  box-sizing: border-box;
   width: 600px;
   min-height: 60px;
   padding-left: 20px;
@@ -494,6 +501,10 @@ body {
 
 .input:focus {
   border: 3px solid #83b3d3;
+}
+
+.input:invalid {
+  border: 2px solid #ff5757;
 }
 
 /*футер*/
@@ -596,7 +607,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  margin-top: 66px;
 }
 
 .filter-container {
@@ -747,11 +757,7 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 0px 0px 3px #81b3d3;
 }
-/*
-.check {
-  opacity: 0.3;
-}
-*/
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1243,8 +1249,8 @@ body {
 /* МОДАЛЬНОЕ ОКНО */
 .modal-container {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 80;
+  left: 80;
   display: flex;
   width: 100%;
   height: 100%;
@@ -1264,7 +1270,7 @@ body {
 }
 
 .modal-auth {
-  width: 715px;
+  width: 575px;
 }
 
 .modal-close-button {
@@ -1292,6 +1298,7 @@ body {
 
 .modal-title {
   margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 30px;
@@ -1307,7 +1314,8 @@ body {
 }
 
 .choice-date {
-  width: 41%;
+  width: 155px;
+  margin: 0;
 }
 
 .field {
@@ -1348,6 +1356,7 @@ body {
   flex-direction: column;
   width: 420px;
   margin-bottom: 11px;
+  right: 0;
 }
 
 .field-age {
@@ -1408,7 +1417,7 @@ body {
 
 .plus-adults {
   position: absolute;
-  left: 402px;
+  left: 260px;
   bottom: 31px;
 }
 
@@ -1428,13 +1437,13 @@ body {
 
 .minus-adults {
   position: absolute;
-  left: 313px;
+  left: 175px;
   bottom: 37px;
 }
 
 .minus-children {
   position: absolute;
-  right: 111px;
+  right: 107px;
   top: 27px;
 }
 
@@ -1466,19 +1475,20 @@ body {
   color: #ffffff;
   border: none;
   margin-right: 25px;
+  margin-left: 8px;
 }
 
 .triangle {
   position: absolute;
   top: 48px;
-  right: 170px;
+  right: 165px;
 }
 .phrase {
   position: absolute;
   font-size: 16px;
   line-height: 20px;
   top: 57px;
-  right: 50px;
+  right: 45px;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
   color: #ffffff;
