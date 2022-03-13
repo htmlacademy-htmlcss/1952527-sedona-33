@@ -50,7 +50,6 @@ body {
   margin-right: 40px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-/* ШАПКА */
 
 .page-header {
   color: #000000;
@@ -184,12 +183,10 @@ body {
   padding: 0;
 }
 
-.card-business {
-  background-image: url('images/indexTop.jpg');
+.introduction {
+  background-image: url('images/index_top.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 485px;
-  margin: 0 auto;
 }
 
 .business-card {
@@ -221,8 +218,6 @@ body {
   text-align: center;
 }
 
-/* ПРОИМУЩЕСТВА */
-
 .housing {
   padding-top: 89px;
 }
@@ -238,12 +233,14 @@ body {
 .edge-list {
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .edge-item-long {
   display: flex;
   background: #83b3d3;
+  flex-wrap: wrap;
 }
 
 .edge-item-short {
@@ -303,6 +300,7 @@ body {
   width: 1200px;
   height: 384px;
   padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -313,6 +311,7 @@ body {
 }
 
 .edge-title {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -347,14 +346,13 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-/* ПОИСК ГОСТИНЕЦ */
-
 .hotel-search {
   display: flex;
   flex-direction: column;
 }
 
 .sentence-title {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -369,6 +367,7 @@ body {
 }
 
 .sentence-text {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -380,6 +379,7 @@ body {
 }
 
 .button-search {
+  font-family: 'PT Sans', sans-serif;
   background-position: center;
   font-weight: 700;
   font-size: 20px;
@@ -410,21 +410,21 @@ body {
   border: 3px solid #83b3d3;
 }
 
-/* ПОДПИСКА */
 .subscription {
   display: flex;
   margin: 0;
   flex-direction: column;
   color: #ffffff;
   background-color: #000000;
-  background-image: url('images/indexBottom.jpg');
+  background-image: url('images/index_bottom.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
 }
 
 .subscription-title {
-  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -506,8 +506,6 @@ body {
 .input:invalid {
   border: 2px solid #ff5757;
 }
-
-/*футер*/
 
 .main-footer {
   background-color: #ffffff;
@@ -601,8 +599,6 @@ body {
   opacity: 0.3;
 }
 
-/* КАТАЛОГ */
-
 .main-inner {
   width: 1200px;
   margin: 0 auto;
@@ -610,7 +606,7 @@ body {
 }
 
 .filter-container {
-  background-image: url('images/catalogTop.jpg');
+  background-image: url('images/catalog_top.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 408px;
@@ -657,7 +653,6 @@ body {
   width: 1060px;
   margin: 0 auto;
 }
-/* СОРТИРОВКА */
 
 .range-scale {
   position: relative;
@@ -915,7 +910,7 @@ body {
 }
 
 .main-inner {
-  background-image: url('/images/catalogTop.jpg');
+  background-image: url('/images/catalog_top.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 410px;
@@ -1108,6 +1103,7 @@ body {
 .price {
   grid-column: 3/-1;
 }
+
 .selected {
   grid-column: 3/-1;
   background-color: #7db54f;
@@ -1180,13 +1176,17 @@ body {
   background-color: #83b3d3;
 }
 
-/* ПАГИНАЦИЯ*/
+.pagination-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
 
 .pagination {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+
   list-style-type: none;
 }
 
@@ -1246,11 +1246,11 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
-/* МОДАЛЬНОЕ ОКНО */
+
 .modal-container {
   position: fixed;
-  top: 80;
-  left: 80;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   height: 100%;
@@ -1263,14 +1263,11 @@ body {
 
 .modal {
   position: relative;
-  margin: auto;
   padding: 62px 70px;
+  margin: auto;
+  width: 575px;
   border-radius: 30px;
   background-color: #ffffff;
-}
-
-.modal-auth {
-  width: 575px;
 }
 
 .modal-close-button {
