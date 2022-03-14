@@ -184,9 +184,11 @@ body {
 }
 
 .introduction {
-  background-image: url('images/index_top.jpg');
+  background-image: url('images/vector.png'), url('images/index_top.jpg');
+  background-position: bottom, top;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 485px;
 }
 
 .business-card {
