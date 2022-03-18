@@ -43,8 +43,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* ШАПКА */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 
 .page-header {
   color: #000000;
@@ -54,13 +59,14 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
-  position: absolute;
   width: 1200px;
   margin: 0 auto;
 }
 
 .logo {
+  position: absolute;
   width: 140px;
   margin-left: 70px;
   margin-right: 30px;
@@ -73,6 +79,7 @@ body {
   padding: 0;
   width: 450px;
   list-style-type: none;
+  margin-left: 239px;
 }
 
 .navigation-link {
@@ -125,6 +132,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin-left: 18px;
+  margin-right: 70px;
   max-height: 37px;
   padding: 8px 15px;
   text-transform: uppercase;
@@ -175,13 +183,12 @@ body {
   padding: 0;
 }
 
-.card-business {
-  background-image: url('images/indexTop.jpg');
+.introduction {
+  background-image: url('images/vector.png'), url('images/index_top.jpg');
+  background-position: bottom, top;
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 485px;
-  margin: 0 auto;
-  margin-top: 66px;
 }
 
 .business-card {
@@ -213,8 +220,6 @@ body {
   text-align: center;
 }
 
-/* ПРОИМУЩЕСТВА */
-
 .housing {
   padding-top: 89px;
 }
@@ -230,12 +235,14 @@ body {
 .edge-list {
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .edge-item-long {
   display: flex;
   background: #83b3d3;
+  flex-wrap: wrap;
 }
 
 .edge-item-short {
@@ -295,6 +302,7 @@ body {
   width: 1200px;
   height: 384px;
   padding: 0;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
@@ -305,6 +313,7 @@ body {
 }
 
 .edge-title {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -339,14 +348,13 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-/* ПОИСК ГОСТИНЕЦ */
-
 .hotel-search {
   display: flex;
   flex-direction: column;
 }
 
 .sentence-title {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -361,6 +369,7 @@ body {
 }
 
 .sentence-text {
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -372,6 +381,7 @@ body {
 }
 
 .button-search {
+  font-family: 'PT Sans', sans-serif;
   background-position: center;
   font-weight: 700;
   font-size: 20px;
@@ -402,21 +412,21 @@ body {
   border: 3px solid #83b3d3;
 }
 
-/* ПОДПИСКА */
 .subscription {
   display: flex;
   margin: 0;
   flex-direction: column;
   color: #ffffff;
   background-color: #000000;
-  background-image: url('images/indexBottom.jpg');
+  background-image: url('images/index_bottom.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
 }
 
 .subscription-title {
-  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -460,7 +470,8 @@ body {
   padding: 0;
   border-radius: 0 10px 10px 0;
   width: 200px;
-  border: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .button-subscription:focus {
@@ -477,7 +488,6 @@ body {
 }
 
 .input {
-  box-sizing: border-box;
   width: 600px;
   min-height: 60px;
   padding-left: 20px;
@@ -495,7 +505,9 @@ body {
   border: 3px solid #83b3d3;
 }
 
-/*футер*/
+.input:invalid {
+  border: 2px solid #ff5757;
+}
 
 .main-footer {
   background-color: #ffffff;
@@ -589,17 +601,14 @@ body {
   opacity: 0.3;
 }
 
-/* КАТАЛОГ */
-
 .main-inner {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  margin-top: 66px;
 }
 
 .filter-container {
-  background-image: url('images/catalogTop.jpg');
+  background-image: url('images/catalog_top.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 408px;
@@ -645,12 +654,6 @@ body {
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
-}
-/* СОРТИРОВКА */
-.catalog-filter-price {
-  padding: 0;
-  margin-left: 100px;
-  margin-right: 81px;
 }
 
 .range-scale {
@@ -698,30 +701,58 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 34px;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
 }
 
 .catalog-filter-label {
-  display: flex;
-  width: 140px;
-  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
   color: #ffffff;
-  border: 1px solid #ffffff;
 }
-
-.catalog-filter-label .range-input {
+.range-input-min {
+  box-sizing: border-box;
+  width: 143px;
   height: 48px;
-  width: 90px;
-  padding-left: 17px;
-  font: inherit;
+  font-size: 18px;
+  line-height: 23px;
   color: #ffffff;
   background-color: transparent;
-  border: none;
+  padding-left: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+}
+
+.range-input-max {
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 18px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
 }
 
 .check {
+  position: absolute;
+  font-size: 18px;
+  line-height: 23px;
+  right: 14px;
+  top: 10px;
   opacity: 0.3;
+}
+
+.range-input-min:active {
+  background-color: #756257;
+}
+.range-input-min:focus {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81b3d3;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -745,6 +776,7 @@ body {
   height: 20px;
   border-radius: 4px;
   border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .control:hover .control-mark {
@@ -880,7 +912,7 @@ body {
 }
 
 .main-inner {
-  background-image: url('/images/catalogTop.jpg');
+  background-image: url('/images/catalog_top.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   min-height: 410px;
@@ -932,6 +964,7 @@ body {
   margin-top: 60px;
   margin-bottom: 20px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-apply:hover {
@@ -967,7 +1000,7 @@ body {
 }
 
 .hotels {
-  width: 1057px;
+  width: 1060px;
   margin: 0 auto;
   padding-top: 53px;
 }
@@ -1072,6 +1105,7 @@ body {
 .price {
   grid-column: 3/-1;
 }
+
 .selected {
   grid-column: 3/-1;
   background-color: #7db54f;
@@ -1123,29 +1157,38 @@ body {
 }
 
 .border {
-  margin: 0;
   margin-top: 30px;
   margin-bottom: 30px;
   border-top: 1px solid #e6e6e6;
+  transform: rotate(180deg);
 }
 
 .button-load-more {
   border-radius: 4px;
   width: 620px;
   height: 60px;
+  font-weight: 700;
   margin-left: 218px;
   font-size: 20px;
   line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
   background-color: #83b3d3;
 }
 
-/* ПАГИНАЦИЯ*/
+.pagination-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
 
 .pagination {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+
   list-style-type: none;
 }
 
@@ -1183,13 +1226,16 @@ body {
 
 .hotel-page {
   display: flex;
+  line-height: 23px;
   width: 175px;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-left: 300px;
+  color: #333333;
 }
 
 .number-hotels {
+  box-sizing: border-box;
   width: 150px;
   margin-left: 51px;
   padding-top: 3px;
@@ -1202,7 +1248,7 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
-/* МОДАЛЬНОЕ ОКНО */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1219,14 +1265,11 @@ body {
 
 .modal {
   position: relative;
-  margin: auto;
   padding: 62px 70px;
+  margin: auto;
+  width: 575px;
   border-radius: 30px;
   background-color: #ffffff;
-}
-
-.modal-auth {
-  width: 715px;
 }
 
 .modal-close-button {
@@ -1254,6 +1297,7 @@ body {
 
 .modal-title {
   margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 30px;
@@ -1269,7 +1313,8 @@ body {
 }
 
 .choice-date {
-  width: 41%;
+  width: 155px;
+  margin: 0;
 }
 
 .field {
@@ -1310,6 +1355,7 @@ body {
   flex-direction: column;
   width: 420px;
   margin-bottom: 11px;
+  right: 0;
 }
 
 .field-age {
@@ -1370,7 +1416,7 @@ body {
 
 .plus-adults {
   position: absolute;
-  left: 402px;
+  left: 260px;
   bottom: 31px;
 }
 
@@ -1390,13 +1436,13 @@ body {
 
 .minus-adults {
   position: absolute;
-  left: 313px;
+  left: 175px;
   bottom: 37px;
 }
 
 .minus-children {
   position: absolute;
-  right: 111px;
+  right: 107px;
   top: 27px;
 }
 
@@ -1428,19 +1474,20 @@ body {
   color: #ffffff;
   border: none;
   margin-right: 25px;
+  margin-left: 8px;
 }
 
 .triangle {
   position: absolute;
   top: 48px;
-  right: 170px;
+  right: 165px;
 }
 .phrase {
   position: absolute;
   font-size: 16px;
   line-height: 20px;
   top: 57px;
-  right: 50px;
+  right: 45px;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
   color: #ffffff;
