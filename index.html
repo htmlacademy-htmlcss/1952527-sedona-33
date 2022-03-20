@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-
   <body>
     <div class="container">
       <header class="page-header">
@@ -172,7 +171,7 @@
                     />
                     <h3 class="edge-title">Жилье</h3>
                     <p class="edge-description">
-                      Рекомендуем пожить<br> в настоящем мотеле,</br> всё как в кино!
+                      Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
                     </p>
                   </li>
                   <li class="edge-item food-item">
@@ -404,81 +403,78 @@
           </a>
         </div>
       </footer>
-    </div>
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-auth">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/"  method="post">
-            <p class="choice-date">
-              <label class="form-label" for="check-in"> Дата заезда:</label>
-              <div class="arrival-dates">
-                <input
-                  class="field"
-                  type="text"
-                  id="check-in"
-                  name="appointment-date"
-                  placeholder="27 апреля 2020"/>
-                <img class="icon-date" src="images/icons/date.svg" width="15" height="15" alt="иконка">
-                <span class="past">
-                <span class="date-past">Мы не можем отправить вас в прошлое.</span>
-              </div>
-            </p>
-            <p class="choice-date">
-              <label class="form-label" for="departure">
-                Дата выезда:</label
-              >
-              <div class="arrival-dates">
-                <input
-                  class="field"
-                  type="text"
-                  id="departure"
-                  name="appointment-date"
-                  placeholder="1 Сентебря 2021"/>
-                <img class="icon-date" src="images/icons/date.svg" width="15" height="15" alt="иконка">
-                <span class="past"
-                  >На эти даты есть свободные номера. Пока есть.</span
-                >
-              </div>
-            </p>
-            <div class="adults-age">
-              <p class="adults">
-                <label class="adults">Взрослые:</label>
-                <input
-                  class="field-age"
-                  type="text"
-                  name="departure"
-                  placeholder="2"
-                />
-              <img class="plus-adults" src="images/icons/plus.svg" width="13" height="13" alt="иконка">
-              <img class="minus-adults" src="images/icons/minus.svg" width="13" height="1" alt="иконка">
-              </p>
-              </p>
-              <p class="children">
-                <label class="children"> Дети:</label>
-                <div class="specify">
-                  <button class="specify-children">i</button>
-                  <svg class="triangle" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333"/>
-                  </svg>
-                  <span class="phrase">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/"  method="post">
+              <p class="choice-date">
+                <label class="form-label" for="check-in"> Дата заезда:</label>
+                <div class="arrival-dates">
+                  <input
+                    class="field"
+                    type="text"
+                    id="check-in"
+                    name="appointment-date"
+                    placeholder="27 апреля 2020"/>
+                  <img class="icon-date" src="images/icons/date.svg" width="15" height="15" alt="иконка">
+                  <span class="past">
+                  <span class="date-past">Мы не можем отправить вас в прошлое.</span>
                 </div>
-                <input
-                  class="little"
-                  type="text"
-                  name="departure"
-                  placeholder="1"
-                />
-                <img class="plus-children" src="images/icons/plus.svg" width="13" height="13" alt="иконка">
-                <img class="minus-children" src="images/icons/minus.svg" width="13" height="1" alt="иконка">
               </p>
-            </div>
-            <button class="button-date" type="submit">Найти</button>
-          </form>
-        </section>
+              <p class="choice-date">
+                <label class="form-label" for="departure">
+                  Дата выезда:</label
+                >
+                <div class="arrival-dates">
+                  <input
+                    class="field"
+                    type="text"
+                    id="departure"
+                    name="appointment-date"
+                    placeholder="1 Сентебря 2021"/>
+                  <img class="icon-date" src="images/icons/date.svg" width="15" height="15" alt="иконка">
+                  <span class="past">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </p>
+              <div class="adults-age">
+                <p class="adults">
+                  <label class="adults">Взрослые:</label>
+                  <input
+                    class="field-age"
+                    type="text"
+                    name="departure"
+                    placeholder="2"
+                  />
+                  <img class="plus-adults" src="images/icons/plus.svg" width="13" height="13" alt="иконка">
+                  <img class="minus-adults" src="images/icons/minus.svg" width="13" height="1" alt="иконка">
+                </p>
+                <p class="children">
+                  <label class="children"> Дети:</label>
+                  <div class="specify">
+                    <button class="specify-children">i</button>
+                    <svg class="triangle" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333"/>
+                    </svg>
+                    <span class="phrase">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                  </div>
+                  <input
+                    class="little"
+                    type="text"
+                    name="departure"
+                    placeholder="1"
+                  />
+                  <img class="plus-children" src="images/icons/plus.svg" width="13" height="13" alt="иконка">
+                  <img class="minus-children" src="images/icons/minus.svg" width="13" height="1" alt="иконка">
+                </p>
+              </div>
+              <button class="button-date" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
