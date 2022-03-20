@@ -1324,11 +1324,11 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-
+/*
 .modal-container-close {
   display: none;
 }
-
+*/
 .modal {
   position: relative;
   padding: 62px 70px;
