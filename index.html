@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -18,7 +19,9 @@
           />
           <ul class="navigation-list navigation-home">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-home" href="#">Главная</a>
+              <a class="navigation-link navigation-link-home" href="#"
+                >Главная</a
+              >
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -114,7 +117,7 @@
               </a>
             </li>
             <li class="navigation-item-button">
-              <a class="navigation-link button-nav" href="#">Хочу сюда</a>
+              <a class="button-nav" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
@@ -122,15 +125,17 @@
       <main class="main-container main-index">
         <div class="page-container">
           <div class="introduction">
-            <h1 class="visually-hidden">"Sedona" - поиск и бронирование отелей в Седоне.</h1>
-              <img
-                class="business-card"
-                src="images/icon/greetings.svg"
-                width="458"
-                height="352"
-                alt="Приветствие"
-              />
-            </div>
+            <h1 class="visually-hidden">
+              "Sedona" - поиск и бронирование отелей в Седоне.
+            </h1>
+            <img
+              class="business-card"
+              src="images/icons/greetings.svg"
+              width="458"
+              height="352"
+              alt="Приветствие"
+            />
+          </div>
           <section class="advantages">
             <h2 class="main-title">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -142,7 +147,7 @@
               <li class="edge-item-long">
                 <div class="turn">
                   <h3 class="edge-photo-title">
-                    Настоящий <br/>
+                    Настоящий <br />
                     городок
                   </h3>
                   <p class="reasons-number">-№1-</p>
@@ -163,41 +168,46 @@
                   <li class="edge-item">
                     <img
                       class="housing"
-                      src="images/icon/icon-1.svg"
+                      src="images/icons/icon-1.svg"
                       width="75"
                       height="72"
                       alt="Жильё"
                     />
                     <h3 class="edge-title">Жилье</h3>
                     <p class="edge-description">
-                      Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                      Рекомендуем пожить<br />
+                      в настоящем мотеле,<br />
+                      всё как в кино!
                     </p>
                   </li>
                   <li class="edge-item food-item">
                     <img
                       class="food"
-                      src="images/icon/icon-2.svg"
+                      src="images/icons/icon-2.svg"
                       width="74"
                       height="70"
                       alt="Еда"
                     />
                     <h3 class="edge-title">Еда</h3>
                     <p class="edge-description">
-                      Всегда заказывайте топовый фирменный бургер, вы не
-                      разочаруетесь!
+                      Всегда заказывайте<br />
+                      топовый фирменный бургер,<br />
+                      вы не разочаруетесь!
                     </p>
                   </li>
                   <li class="edge-item">
                     <img
                       class="souvenirs"
-                      src="images/icon/icon-3.svg"
+                      src="images/icons/icon-3.svg"
                       width="64"
                       height="76"
                       alt="Сувениры"
                     />
                     <h3 class="edge-title">Сувениры</h3>
                     <p class="edge-description">
-                      Не только китайского, но и настоящего местного производства!
+                      Не только китайского,<br />
+                      но и настоящего местного<br />
+                      производства!
                     </p>
                   </li>
                 </ul>
@@ -220,22 +230,22 @@
               </li>
               <li class="edge-item edge-item-short">
                 <h2 class="edge-title-short">Небольшая<br />площадь</h2>
-                <p class="edge-number">- 3 -</p>
-                <p class="edge-description">
+                <p class="edge-number">- №3 -</p>
+                <p class="edge-description edge-description-short">
                   Все достопримечательности находятся очень близко
                 </p>
               </li>
               <li class="edge-item-short road">
                 <h2 class="edge-title-short">Красивая<br />дорога</h2>
-                <p class="edge-number">- 4 -</p>
-                <p class="edge-description">
+                <p class="edge-number">- №4 -</p>
+                <p class="edge-description edge-description-short">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </li>
               <li class="edge-item edge-item-short">
                 <h2 class="edge-title-short">Мало<br />туристов</h2>
-                <p class="edge-number">- 5 -</p>
-                <p class="edge-description">
+                <p class="edge-number">- №5 -</p>
+                <p class="edge-description edge-description-short">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </li>
@@ -402,31 +412,41 @@
           </a>
         </div>
       </footer>
-    </div>
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-auth">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/"  method="post">
-            <p class="choice-date">
-              <label class="form-label" for="check-in"> Дата заезда:</label>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form
+              class="auth-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <label class="form-label choice-date" for="check-in">
+                Дата заезда:</label
+              >
               <div class="arrival-dates">
                 <input
                   class="field"
                   type="text"
                   id="check-in"
                   name="appointment-date"
-                  placeholder="27 апреля 2020"/>
-                <img class="icon-date" src="images/icon/date.svg" width="15" height="15" alt="иконка">
-                <span class="past">
-                <span class="date-past">Мы не можем отправить вас в прошлое.</span>
+                  placeholder="27 апреля 2020"
+                />
+                <img
+                  class="icon-date"
+                  src="images/icons/date.svg"
+                  width="15"
+                  height="15"
+                  alt="иконка"
+                />
+                <span class="past date-past"
+                  >Мы не можем отправить вас в прошлое.</span
+                >
               </div>
-            </p>
-            <p class="choice-date">
-              <label class="form-label" for="departure">
+              <label class="form-label choice-date" for="departure">
                 Дата выезда:</label
               >
               <div class="arrival-dates">
@@ -435,34 +455,61 @@
                   type="text"
                   id="departure"
                   name="appointment-date"
-                  placeholder="1 Сентебря 2021"/>
-                <img class="icon-date" src="images/icon/date.svg" width="15" height="15" alt="иконка">
+                  placeholder="1 Сентебря 2021"
+                />
+                <img
+                  class="icon-date"
+                  src="images/icons/date.svg"
+                  width="15"
+                  height="15"
+                  alt="иконка"
+                />
                 <span class="past"
                   >На эти даты есть свободные номера. Пока есть.</span
                 >
               </div>
-            </p>
-            <div class="adults-age">
-              <p class="adults">
-                <label class="adults">Взрослые:</label>
+              <div class="adults-age">
+                <label class="adults adults">Взрослые:</label>
                 <input
                   class="field-age"
                   type="text"
                   name="departure"
                   placeholder="2"
                 />
-              <img class="plus-adults" src="images/icon/plus.svg" width="13" height="13" alt="иконка">
-              <img class="minus-adults" src="images/icon/minus.svg" width="13" height="1" alt="иконка">
-              </p>
-              </p>
-              <p class="children">
-                <label class="children"> Дети:</label>
+                <img
+                  class="plus-adults"
+                  src="images/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt="иконка"
+                />
+                <img
+                  class="minus-adults"
+                  src="images/icons/minus.svg"
+                  width="13"
+                  height="1"
+                  alt="иконка"
+                />
+                <label class="children children"> Дети:</label>
                 <div class="specify">
                   <button class="specify-children">i</button>
-                  <svg class="triangle" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333"/>
+                  <svg
+                    class="triangle"
+                    width="19"
+                    height="9"
+                    viewBox="0 0 19 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333" />
                   </svg>
-                  <span class="phrase">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                  <span class="phrase"
+                    >Укажите количество детей,<br />
+                    которые будут с вами, возраст<br />
+                    которых от 6 до 18 лет. Дети<br />
+                    до 6 лет размещаются<br />
+                    бесплатно.</span
+                  >
                 </div>
                 <input
                   class="little"
@@ -470,13 +517,25 @@
                   name="departure"
                   placeholder="1"
                 />
-                <img class="plus-children" src="images/icon/plus.svg" width="13" height="13" alt="иконка">
-                <img class="minus-children" src="images/icon/minus.svg" width="13" height="1" alt="иконка">
-              </p>
-            </div>
-            <button class="button-date" type="submit">Найти</button>
-          </form>
-        </section>
+                <img
+                  class="plus-children"
+                  src="images/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt="иконка"
+                />
+                <img
+                  class="minus-children"
+                  src="images/icons/minus.svg"
+                  width="13"
+                  height="1"
+                  alt="иконка"
+                />
+              </div>
+              <button class="button-date" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </body>
